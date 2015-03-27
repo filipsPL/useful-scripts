@@ -18,7 +18,7 @@ cmd = os.popen("lynx -dump '%s'" % url)
 raw = cmd.read()
 cmd.close()
 
-print url
+#print url
 
 # ----------- processing ------------------- #
 
@@ -45,6 +45,6 @@ binsPM25=np.array([0, 25, 50, 75, 100])
 x = np.array([float(values[6])])
 binPM25 = int(np.digitize(x, binsPM25))
 
-print values[0:2]
+#print values[0:2]
 print "PM10:  ", values[2], binPM10
 print "PM2.5: ", values[6], binPM25
